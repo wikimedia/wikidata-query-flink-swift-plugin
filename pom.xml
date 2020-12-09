@@ -13,7 +13,18 @@
     <version>1.11.2-SNAPSHOT</version>
     <name>Flink Swift FS plugin - TempAuth</name>
 
+    <scm>
+        <connection>scm:git:https://gerrit.wikimedia.org/r/wikidata/query/flink-swift-plugin</connection>
+        <!--
+            We point to an user property to make it possible to override the remote
+            SCM in CI. Namely CI pushes over https when developers typically use ssh.
+        -->
+        <developerConnection>${developerConnection}</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://gerrit.wikimedia.org/r/#/admin/projects/wikidata/query/flink-swift-plugin</url>
+    </scm>
     <properties>
+        <developerConnection>scm:git:ssh://gerrit.wikimedia.org:29418/wikidata/query/flink-swift-plugin</developerConnection>
         <flink.version>1.11.2</flink.version>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <openstackhadoop.hadoop.version>2.8.1</openstackhadoop.hadoop.version>
