@@ -10,11 +10,11 @@
 
     <groupId>org.wikidata.query.rdf</groupId>
     <artifactId>flink-fs-swift</artifactId>
-    <version>1.11.2</version>
+    <version>1.11.2-SNAPSHOT</version>
     <name>Flink Swift FS plugin - TempAuth</name>
 
     <properties>
-        <flink.version>${project.version}</flink.version>
+        <flink.version>1.11.2</flink.version>
         <forbiddenapis.skip>true</forbiddenapis.skip>
         <openstackhadoop.hadoop.version>2.8.1</openstackhadoop.hadoop.version>
         <spotbugs.skip>true</spotbugs.skip>
